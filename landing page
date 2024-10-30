@@ -177,6 +177,10 @@
             margin: 0 auto;
         }
 
+        .contact-section {
+            text-align: center;
+        }
+
         .contact-icons {
             display: flex;
             gap: 20px;
@@ -204,6 +208,27 @@
             to {
                 text-shadow: 0 0 20px #ffcc00, 0 0 30px #ffa500, 0 0 40px #ffcc00, 0 0 50px #ffcc00, 0 0 60px #ffcc00;
             }
+        }
+
+        /* Additional styles for the new contact section */
+        .contact-container {
+            text-align: center;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .social-icons a img {
+            width: 60px;
+            height: 60px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons a img:hover {
+            transform: scale(1.1);
         }
     </style>
 </head>
@@ -260,21 +285,9 @@
                     <h3>Black Holes</h3>
                     <p>Dive into the mystery of black holes, the most powerful objects in space:</p>
                     <ul>
-                        <li>Event Horizon: The point of no return around a black hole.</li>
-                        <li>Singularity: A region of infinite density and gravity.</li>
-                        <li>Hawking Radiation: Theoretical radiation emitted by black holes.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="content-box">
-                <img src="https://images.unsplash.com/photo-1472671822269-3e134e0e4955" alt="Galaxies">
-                <div class="content">
-                    <h3>Galaxies</h3>
-                    <p>Learn about the structure and formation of galaxies:</p>
-                    <ul>
-                        <li>Milky Way: Our home galaxy with billions of stars.</li>
-                        <li>Andromeda: The closest spiral galaxy to our own.</li>
-                        <li>Spiral vs. Elliptical: Different shapes and structures of galaxies.</li>
+                        <li>Event Horizon: The boundary beyond which nothing can escape.</li>
+                        <li>Singularity: The point of infinite density at the center.</li>
+                        <li>Supermassive Black Holes: Found at the center of most galaxies.</li>
                     </ul>
                 </div>
             </div>
@@ -283,58 +296,34 @@
 
     <section id="missions" class="section">
         <h2>Our Missions</h2>
-        <p>From lunar landings to Mars colonization, our missions are shaping the future.</p>
-        <div class="content-boxes">
-            <div class="content-box">
-                <img src="https://images.unsplash.com/photo-1542321058-8996b1a81845" alt="Moon Landing">
-                <div class="content">
-                    <h3>Moon Landing</h3>
-                    <p>Relive the historic Apollo missions and mankind's first steps on the Moon.</p>
-                </div>
-            </div>
-            <div class="content-box">
-                <img src="https://images.unsplash.com/photo-1580378855365-5886aa4c184d" alt="Mars Exploration">
-                <div class="content">
-                    <h3>Mars Exploration</h3>
-                    <p>The next great adventure: Human missions to the Red Planet.</p>
-                </div>
-            </div>
-            <div class="content-box">
-                <img src="https://images.unsplash.com/photo-1529822172672-d9901f1b639f" alt="Space Telescopes">
-                <div class="content">
-                    <h3>Space Telescopes</h3>
-                    <p>Unlocking the mysteries of the universe through groundbreaking telescopes.</p>
-                </div>
-            </div>
-        </div>
+        <p>Join us as we embark on incredible missions to explore the cosmos.</p>
     </section>
 
-    <section id="galaxy" class="section galaxy-section">
-        <h2>Galaxy Awaits</h2>
-        <p>Discover the universe beyond our solar system, filled with stars, planets, and mysteries waiting to be solved.</p>
+    <section id="galaxy" class="section">
+        <h2>The Galaxy</h2>
+        <p>Discover the wonders of the Milky Way and the universe beyond.</p>
     </section>
 
     <section id="contact" class="section contact-section">
         <h2>Contact Us</h2>
-        <p>Let's embark on the journey together!</p>
-        <div class="contact-icons">
-            <a href="https://github.com/Gokul7707" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="mailto:gokulsrinivasan2020@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/gokul-srinivasan-prabu-a6366a291" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <p>Have questions or want to collaborate? Reach out to us!</p>
+        <div class="contact-container">
+            <div class="social-icons">
+                <!-- GitHub Icon -->
+                <a href="https://github.com/Gokul7707" target="_blank">
+                    <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub">
+                </a>
+                <!-- LinkedIn Icon -->
+                <a href="https://www.linkedin.com/in/gokul-srinivasan-prabu-a6366a291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokEYt0yyh6uNDKL8uksVLlhZ35laKNQgZ9g&s" alt="LinkedIn">
+                </a>
+            </div>
         </div>
     </section>
 
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script>
-        window.addEventListener('scroll', function () {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.style.backgroundColor = "rgba(0, 0, 30, 0.9)";
-            } else {
-                navbar.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
-            }
-        });
-    </script>
+    <footer>
+        <p>&copy; 2024 Space Exploration. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>
